@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #202938;
+}
+
+.container {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.marca {
+    margin-bottom: 8px;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.cabecalho h1 {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.cabecalho p:last-child {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.painel,
+.resultado {
+    padding: 26px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #202938;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.resultado {
+    border-top: 5px solid #16a34a;
+}
+
+.resultado.hidden {
+    display: none;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.total {
+    margin-top: 8px;
+    border-bottom: 0;
+    color: #15803d;
+    font-size: 19px;
+}
+
+footer {
+    padding: 10px;
+    color: #64748b;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+
+    .painel,
+    .resultado {
+        padding: 20px;
+    }
+
+    .linha {
+        font-size: 14px;
+    }
+}
